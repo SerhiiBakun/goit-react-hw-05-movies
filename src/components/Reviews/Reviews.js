@@ -13,6 +13,8 @@ const Reviews = () => {
   }, [movieId]);
 
   if (!reviews) {
+    return <div>Loading...</div>;
+  } else if (reviews.length === 0) {
     return <div>We don't have any reviews for this movie</div>;
   }
 
