@@ -20,6 +20,7 @@ function Movies() {
     }
 
     fetchTrendingMovies(movieName);
+    setQuery(movieName);
   }, [movieName]);
 
   const handleSearch = async event => {
